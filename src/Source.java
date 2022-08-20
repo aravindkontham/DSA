@@ -1,37 +1,17 @@
-//import java.util.Scanner;
-//class Source{
-//    public static void main(String[] args) {
-//        Scanner scan =new Scanner(System.in);
-//        System.out.println("Enter the natural number n:");
-//        int n =scan.nextInt();
-//        System.out.println("Sum of consequtive numbers is:"+addnumbers(n));
-//    }
-//    public static int addnumbers(int num){
-//        if(num!=0)
-//            return num+addnumbers(num-1);
-//        else
-//            return num;
-//    }
-//}
 import java.util.Scanner;
-
 class Source{
-    public static int sum(int n) {
-        //write the logic here
-        int sum=0;
-        while(n!=0){
-           int num= n%10;
-           sum=sum+num;
-           n/=10;
-
-        }
-        System.out.println("Sum of the digits of given number is:");
-        return sum;
-    }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number:");
-        int num = sc.nextInt();
-        System.out.println(sum(num));
+   public static void main(String[] args) {
+       Scanner scan =new Scanner(System.in);
+     System.out.println("Enter the natural number n:");
+        int n =scan.nextInt();
+       System.out.println("Sum of consequtive numbers is:"+addnumbers(n));
+   }
+     public static int addnumbers(int num){
+        if(num!=0)
+            return num+addnumbers(num-1);
+            else
+           return num;
     }
 }
+
+
