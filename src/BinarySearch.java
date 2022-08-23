@@ -15,11 +15,11 @@ public class BinarySearch {
 
     }
     public static void main(String[] args) {
-        BinarySearch binarySearch=new BinarySearch();
+       // BinarySearch binarySearch=new BinarySearch();
         int[] arr=new int[]{1,2,3,4,33,556,44};
         int n=arr.length;
         int key=3;
-        int res=binarySearch.binary(arr,0,n-1,key);
+        int res=binary(arr,0,n-1,key);
         if(res==-1)
             System.out.println("Element is not found");
         else
